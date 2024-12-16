@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Sirvoy Booking Engine
-Version: 4.0
+Version: 5.0
 Plugin URI: https://sirvoy.com/topic/booking-engine/installing-on-your-website/installing-the-booking-engine-on-wordpress/
 Author: Sirvoy Ltd
 Author URI: https://sirvoy.com
 Description: With this plugin you can easily add your Sirvoy booking engine to your Wordpress website and accept online bookings. The bookings will be registered in your Sirvoy account. Sirvoy is an online booking system for hotels, B&Bs, guest houses, inns and other accommodations.
 
-Copyright (c) 2011-2022, Sirvoy Ltd
+Copyright (c) 2011-2024, Sirvoy Ltd
 Released under the GPL license
 All rights reserved.
 
@@ -65,7 +65,7 @@ function sirvoy_booking_engine($atts) {
     // base url
     $str = '<script async src="https://secured.sirvoy.com/widget/sirvoy.js"';
     // add a data parameter with the version, use a special version if deprecated options are in use
-    $atts['wp-plugin-version'] = '4.0';
+    $atts['wp-plugin-version'] = '5.0';
 
     // set all attributes
     foreach ($atts as $key => $value) {

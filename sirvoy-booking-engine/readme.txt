@@ -1,10 +1,10 @@
 === Sirvoy Booking Engine ===
 Contributors: john@sirvoy
-Tags: booking system, booking engine, sirvoy, hotel reservation system, hotel booking system, PMS, availability calendar, booking calendar, accommodation booking
-Requires at least: 3.0
-Tested up to: 6.2
-Stable tag: 4.0
-Requires PHP: 5.6
+Tags: booking system, booking engine, sirvoy, hotel booking system, accommodation booking
+Requires at least: 5.0
+Tested up to: 6.7
+Stable tag: 5.0
+Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Sirvoy booking engine - Non-Commission Direct Bookings from Your Website. Sirvoy
 
 == Description ==
 
-With this plugin you can easily add the Sirvoy booking engine to your Wordpress website and accept commission free online bookings.
+With this plugin you can easily add the Sirvoy booking engine to your WordPress website and accept commission free online bookings.
 The bookings will be registered in your Sirvoy account, which you can sign up for on [https://sirvoy.com](https://sirvoy.com). Sirvoy is an online booking
 system for hotels, B&Bs, guest houses, inns and other accommodations. Besides allowing you to receive direct bookings and payments
 through your website, Sirvoy can also help you to connect and receive bookings from channels, manage and edit your bookings,
@@ -69,18 +69,23 @@ Sirvoy has two-way connections with most leading channels. For a complete list o
 2. New booking page as seen for hotel staff creating bookings.
 3. Rates adjustments page, adjust rates per day in calendar view.
 4. Calendar view, shows occupancy for a week or a month at a time.
-5. Add the plugin directly from the Plugins » Add New page inside your Wordpress admin area.
+5. Add the plugin directly from the Plugins » Add New page inside your WordPress admin area.
 
 == Changelog ==
+= 5.0 (2024-12-11)=
+
+* Tested with WordPress 6.7
+* Breaking change: Requires at least PHP: 7.2
+* Breaking change: Requires at least WordPress: 5.0
 
 = 4.0 (2022-11-11)=
 
-* Tested with Wordpress 6.2
+* Tested with WordPress 6.2
 * REMOVED: Breaking change: All support for deprecated options has been removed
 
 = 3.3 (2021-07-15)=
 
-* Tested with Wordpress 5.8
+* Tested with WordPress 5.8
 
 = 3.2 (2021-04-23)=
 
