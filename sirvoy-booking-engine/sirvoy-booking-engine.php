@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Sirvoy Booking Engine
-Version: 5.0
+Version: 5.1
 Plugin URI: https://sirvoy.com/topic/booking-engine/installing-on-your-website/installing-the-booking-engine-on-wordpress/
 Author: Sirvoy Ltd
 Author URI: https://sirvoy.com
@@ -65,11 +65,19 @@ function sirvoy_booking_engine($atts) {
     // base url
     $str = '<script async src="https://secured.sirvoy.com/widget/sirvoy.js"';
     // add a data parameter with the version, use a special version if deprecated options are in use
-    $atts['wp-plugin-version'] = '5.0';
+    $atts['wp-plugin-version'] = '5.1';
+
+    // URL attributes that need special handling
+    $url_attributes = array('target-result-url', 'target-confirmation-url');
 
     // set all attributes
     foreach ($atts as $key => $value) {
-        $str .= ' data-' . $key . '="' . urlencode($value) . '"';
+        // Use esc_url for URL attributes, esc_attr for others
+        if (in_array($key, $url_attributes)) {
+            $str .= ' data-' . esc_attr($key) . '="' . esc_url($value) . '"';
+        } else {
+            $str .= ' data-' . esc_attr($key) . '="' . esc_attr($value) . '"';
+        }
     }
 
     $str .= '></script>';

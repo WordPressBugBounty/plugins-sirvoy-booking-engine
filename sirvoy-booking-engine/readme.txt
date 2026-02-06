@@ -2,8 +2,8 @@
 Contributors: john@sirvoy
 Tags: booking system, booking engine, sirvoy, hotel booking system, accommodation booking
 Requires at least: 5.0
-Tested up to: 6.7
-Stable tag: 5.0
+Tested up to: 6.9
+Stable tag: 5.1
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -72,6 +72,11 @@ Sirvoy has two-way connections with most leading channels. For a complete list o
 5. Add the plugin directly from the Plugins » Add New page inside your WordPress admin area.
 
 == Changelog ==
+= 5.1 (2025-10-10)=
+
+* Tested with WordPress 6.9 (in development)
+* Fix for encoding attributes of url parameters
+
 = 5.0 (2024-12-11)=
 
 * Tested with WordPress 6.7
